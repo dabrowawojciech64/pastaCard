@@ -17,10 +17,12 @@
 
 .top {
   background-color: red;
+  align-items: flex-end;
 }
 
 .bottom {
   background-color: blue;
+  align-items: flex-start;
 }
 
 .centerpiece {
