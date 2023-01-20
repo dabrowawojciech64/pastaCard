@@ -35,3 +35,10 @@
   background-color: pink;
   font-size: 400px;
 }
+
+
+@media screen and (max-width:768px){
+  .centerpiece {
+    font-size: 300px;
+  }
+}
