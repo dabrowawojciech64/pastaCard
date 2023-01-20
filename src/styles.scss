@@ -2,12 +2,25 @@
 body {
   margin: 0;
   font-family: 'Sedgwick Ave Display', cursive;
-  font-size: 150px;
+
   background-color: rgb(44, 44, 44);
 }
 
-@media screen and (max-width:768px){
+
+@media screen and (max-width:600px){
+  body {
+    font-size: 75px;
+  }
+}
+
+@media screen and (min-width:600px){
   body {
     font-size: 110px;
+  }
+}
+
+@media screen and (min-width:768px){
+  body {
+    font-size: 150px;
   }
 }

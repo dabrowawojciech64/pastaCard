@@ -3,7 +3,6 @@
   flex:1;
   flex-direction: column;
   height:100vh;
-  min-height: 1400px;
 }
 
 .top,
@@ -32,15 +31,22 @@
   padding-bottom: 23px;
 }
 
-.centerpiece {
-  background-color: pink;
-  font-size: 400px;
+@media screen and (max-width:600px){
+  .centerpiece {
+    font-size: 200px;
+  }
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (min-width:600px){
   .centerpiece {
     font-size: 300px;
+  }
+}
+
+@media screen and (min-width:768px){
+  .centerpiece {
+    font-size: 400px;
   }
 }
 
