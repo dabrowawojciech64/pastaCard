@@ -6,7 +6,7 @@ import { AfterViewInit, Component, ElementRef, Renderer2, ViewChild } from '@ang
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements AfterViewInit {
-  title = 'pastaCard';
+  title = 'Wszystkiego Najlepszego!';
 
 
   constructor(private renderer:Renderer2) {
@@ -14,7 +14,10 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('balloonContainer', { static: false }) balloonContainer!: ElementRef
 
   ngAfterViewInit() {
-    setInterval(() => this.createBalloons(1), 200)
+    this.createBalloons(5)
+    setTimeout(() => this.createBalloons(5), 2000)
+    setTimeout(() => this.createBalloons(5), 4000)
+    setTimeout(() => this.createBalloons(5), 6000)
   }
 
 
@@ -28,7 +31,7 @@ export class AppComponent implements AfterViewInit {
     var b = this.random(255);
     var mt = this.random(100);
     var ml = this.random(75) - 5;
-    var dur = this.random(8) + 5;
+    var dur = this.random(8) + 10;
     return `
     background-color: rgba(${r},${g},${b},1.0);
     color: rgba(${r},${g},${b},1.0);
