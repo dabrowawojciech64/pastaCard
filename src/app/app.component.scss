@@ -42,3 +42,26 @@
     font-size: 300px;
   }
 }
+
+.a,.b,.c,.d {
+  height: 20px;
+  width:20px;
+  background-color: cyan;
+  position: absolute;
+}
+
+.a,.c {
+  left:0;
+}
+
+.a,.b{
+  top:0;
+}
+
+.c,.d{
+  bottom:0;
+}
+
+.b,.d{
+  right:0;
+}
