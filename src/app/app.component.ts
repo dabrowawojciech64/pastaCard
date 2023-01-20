@@ -26,18 +26,16 @@ export class AppComponent implements AfterViewInit {
   }
 
   getRandomStyles() {
-    var r = this.random(255);
-    var g = this.random(255);
-    var b = this.random(255);
-    var mt = this.random(100);
-    var ml = this.random(75) - 5;
-    var dur = this.random(8) + 10;
+    let hue = this.random(360);
+    let marginTop = this.random(100);
+    let marginLeft = this.random(75) - 5;
+    let duration = this.random(8) + 10;
     return `
-    background-color: rgba(${r},${g},${b},1.0);
-    color: rgba(${r},${g},${b},1.0);
-    box-shadow: inset -7px -3px 10px rgba(${r - 10},${g - 10},${b - 10},1.0);
-    margin: ${mt}% 0 0 ${ml}%;
-    animation: float ${dur}s ease-in infinite
+    background-color: hsl(${hue},100%,60%);
+    color: hsl(${hue},100%,60%);
+    box-shadow: inset -7px -3px 10px hsl(${hue},100%,40%);;
+    margin: ${marginTop}% 0 0 ${marginLeft}%;
+    animation: float ${duration}s ease-in infinite
     `;
   }
 
